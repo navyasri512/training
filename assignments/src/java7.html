@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dollar(){
+            var num=document.getElementById('num').value;
+            var lang=document.getElementById('lang').value;
+            var r;
+            if(lang == "india"){
+                r=num * 74.28;
+                document.write(r);
+            }
+            else if(lang == "japan"){
+                r=num * 109.14;
+                 document.write(r);
+            }
+            else if(lang == "europe"){
+                r=num * 0.84;
+                document.write(r);
+            }
+            else if(lang == "pound"){
+                r=num * 0.72;
+                document.write(r);
+            }
+            else{
+                document.write(num);
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <form method="post">
+        Enter dollar:  <input type="number" id="num" name="num" />
+        Enter language: <input type="string" id="lang" name="string"/>
+        <input type="button" value="convert" onclick="dollar()" name="find" />
+        <div style="margin-top: 10px;" ></div>
+    </form>
+    
+</body>
+</html>

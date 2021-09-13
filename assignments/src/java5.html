@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>java5</title>
+        <script>
+           
+
+
+            function leapyear() {
+                var year =  document.getElementById('year').value;
+                for(i=0;i<20;){
+                    if((year % 4 === 0) && (year % 100 !== 0)||(year % 400 === 0)){
+                        document.write(year);
+                        document. write("\n"); 
+                        year++;
+                        i++;
+                    }
+                    else{
+                        year++;
+                    }
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <form method="post">
+            Enter a year:  <input type="number" id="year" name="num" /><input type="button" value="Find leap years" onclick="leapyear()" name="find" />
+            <div style="margin-top: 10px;" ></div>
+        </form>
+
+    </body>
+</html>
